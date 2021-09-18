@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 98%);
+  margin-top: 4rem;
+}
+
+.header {
+  text-align: center;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 2rem;
+}
+.header h1 {
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+.header h1 span {
+  font-weight: 600;
+}
+.header p {
+  color: hsl(229, 6%, 66%);
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+}
+.container h2 {
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
+  color: hsl(234, 12%, 34%);
+}
+.container p {
+  font-size: 0.7rem;
+  line-height: 1.5;
+  color: hsl(229, 6%, 66%);
+  font-weight: 200;
+}
+.container img {
+  width: 50px;
+  height: 50;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+  margin: 1.5rem;
+  width: 18rem;
+  height: 12rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  background-color: hsl(0, 0%, 98%);
+  position: relative;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.card-1:hover,
+.card-2:hover,
+.card-3:hover,
+.card-4:hover {
+  transform: translateY(-0.3em);
+}
+
+.card-1 {
+  margin-right: 0;
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+.card-2 {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+.card-3 {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+.card-4 {
+  border-top: 4px solid hsl(212, 86%, 64%);
+
+  margin-left: 0;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .card-1 {
+    margin-right: 1.5rem;
+  }
+
+  .card-4 {
+    margin-left: 1.5rem;
+  }
+}
